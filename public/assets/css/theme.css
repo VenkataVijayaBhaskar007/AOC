@@ -4065,7 +4065,7 @@ fieldset:disabled .btn {
 .btn-primary {
   color: #FFFEFE;
   background-color: #F1A501;
-  border-color: #F1A501;
+
 }
 
 .btn-primary:hover {
@@ -10214,7 +10214,7 @@ fieldset:disabled .btn {
 }
 
 .text-secondary {
-  color: #5E6282 !important;
+  color: orange !important;
 }
 
 .text-success {
@@ -19989,13 +19989,13 @@ iframe {
 
 @media (min-width: 1200px) {
   .hero-title {
-    font-size: 4.62363rem;
+    font-size: 3rem;
   }
 }
 
 @media (min-width: 1400px) {
   .hero-title {
-    font-size: 5.20158rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -20243,27 +20243,7 @@ iframe {
 
 
 
-.whatsapp-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #25D366; /* WhatsApp green */
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
 
-.whatsapp-button i {
-  font-size: 20px;
-}
-
-.whatsapp-button:hover {
-  background-color: #128C7E; /* Darker shade of WhatsApp green on hover */
-}
 
 
 
@@ -20670,31 +20650,293 @@ color: #878787;
 }
 
 
+
+/* Add your own styles as needed */
 .whatsapp-button {
   position: fixed;
+  width: 40px; /* Adjust width */
+  height: 40px; /* Adjust height */
   bottom: 30px;
   left: 35px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #25D366; /* WhatsApp green */
-    color: #fff;
-    border: none;
-    border-radius: 8px; /* Rectangular shape */
-    padding: 10px 15px; /* Adjust padding */
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366; /* WhatsApp green */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .whatsapp-button i {
-    font-size: 20px;
+  font-size: 80px;
+  margin: 0; 
+
 }
 
 .whatsapp-button:hover {
-    background-color: #128C7E; /* Darker shade of WhatsApp green on hover */
+  background-color: #128C7E; /* Darker shade of WhatsApp green on hover */
 }
 
-.whatsapp-text {
-    margin-left: 10px;
+footer {
+  background-color: #091e3e; /* Light blue color */
+  padding: 20px; /* Add padding as needed */
+  color: white; /* Text color */
 }
+
+
+
+
+/* Section Title */
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+  background: orange;
+  border-radius: 2px;
+  
+}
+
+.section-title.text-center::before {
+  left: 50%;
+  margin-left: -75px;
+}
+
+.section-title.section-title-sm::before {
+  width: 90px;
+  height: 5px;
+
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 5px;
+  bottom: 9px;
+
+ 
+  -webkit-animation: section-title-run 5s infinite linear;
+  animation: section-title-run 5s infinite linear;
+}
+
+.section-title.section-title-sm::after {
+  content: '\f072'; /* Unicode for the Font Awesome icon, adjust as needed */
+  font-family: 'Font Awesome 5 Free'; /* Font family for Font Awesome icons */
+  font-size: 20px; /* Adjust the size of the icon */
+  color: white; /* Adjust the color of the icon */
+  margin-left: 5px; /* Optional: Adjust spacing between text and icon */
+
+}
+
+
+.section-title.text-center::after {
+  -webkit-animation: section-title-run-center 5s infinite linear;
+  animation: section-title-run-center 5s infinite linear;
+}
+
+.section-title.section-title-sm::after {
+  -webkit-animation: section-title-run-sm 5s infinite linear;
+  animation: section-title-run-sm 5s infinite linear;
+}
+
+@-webkit-keyframes section-title-run {
+  0% {
+      left: 0;
+  }
+
+  50% {
+      left: 145px;
+  }
+
+  100% {
+      left: 0;
+  }
+}
+
+@-webkit-keyframes section-title-run-center {
+  0% {
+      left: 50%;
+      margin-left: -75px;
+  }
+
+  50% {
+      left: 50%;
+      margin-left: 45px;
+  }
+
+  100% {
+      left: 50%;
+      margin-left: -75px;
+  }
+}
+
+@-webkit-keyframes section-title-run-sm {
+  0% {
+      left: 0;
+  }
+
+  50% {
+      left: 85px;
+  }
+
+  100% {
+      left: 0;
+  }
+}
+
+.footer-heading {
+  display: flex;
+  align-items: center;
+  font-size: large;
+}
+.footer-heading1 {
+  display: flex;
+  align-items: center;
+
+}
+.rounded-image-container {
+  overflow: hidden;
+  background-color: white;
+  width: 4rem;
+  
+  border-radius: 50%; /* Make it a circle (for a rounded rectangle, adjust border-radius accordingly) */
+  margin-right: 10px; /* Adjust spacing between image and text */
+}
+
+.rounded-image-container img {
+  display: block;
+  width: 50px; /* Adjust the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+ 
+}
+
+
+
+
+
+
+
+/* flight Title */
+
+.flight-title::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+  background: none;
+  border-radius: 2px;
+  
+}
+
+.flight-title.text-center::before {
+  left: 50%;
+  margin-left: -75px;
+}
+
+.flight-title.flight-title-sm::before {
+  width: 450px;
+  height: 5px;
+
+}
+
+.flight-title::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 5px;
+  bottom: 39px;
+
+ 
+  -webkit-animation: flight-title-run 5s infinite linear;
+  animation: flight-title-run 5s infinite linear;
+}
+
+.flight-title.flight-title-sm::after {
+  content: '\f072'; /* Unicode for the Font Awesome icon, adjust as needed */
+  font-family: 'Font Awesome 5 Free'; /* Font family for Font Awesome icons */
+  font-size: 20px; /* Adjust the size of the icon */
+  color: navy; /* Adjust the color of the icon */
+  margin-left: 5px; /* Optional: Adjust spacing between text and icon */
+
+}
+
+
+.flight-title.text-center::after {
+  -webkit-animation: flight-title-run-center 5s infinite linear;
+  animation: flight-title-run-center 5s infinite linear;
+}
+
+.flight-title.flight-title-sm::after {
+  -webkit-animation: flight-title-run-sm 10s infinite linear;
+  animation: flight-title-run-sm 10s infinite linear;
+}
+
+@-webkit-keyframes flight-title-run {
+  0% {
+      left: 0;
+  }
+
+  50% {
+      left: 500px;
+  }
+
+  100% {
+      left: 0;
+  }
+}
+
+@-webkit-keyframes flight-title-run-center {
+  0% {
+      left: 50%;
+      margin-left: -75px;
+  }
+
+  50% {
+      left: 50%;
+      margin-left: 45px;
+  }
+
+  100% {
+      left: 50%;
+      margin-left: -75px;
+  }
+}
+
+@-webkit-keyframes flight-title-run-sm {
+  0% {
+      left: 0;
+  }
+
+  50% {
+      left: 450px;
+  }
+
+  100% {
+      left: 0;
+  }
+}
+
+
+ 
+
+.primary-btn-shadow {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        
