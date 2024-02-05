@@ -16044,8 +16044,8 @@ button:focus, input:focus, textarea:focus {
   }
   .spiral-main {
 	margin: 0px auto;
-	width: 300px;
-	height: 300px;
+	width: 360px;
+	height: 360px;
 	position: relative;
   }
   .spiral-big-circle {
