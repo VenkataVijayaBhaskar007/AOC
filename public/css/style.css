@@ -16149,7 +16149,7 @@ button:focus, input:focus, textarea:focus {
 	transform: translate(-25%, 25%);
 	background-color: #0000ff;
 	color: #ffffff; 
-	-webkit-transform: translate(-125%, -125%);
+	-webkit-transform: translate(-100%, -100%);
   }
   
   /* circle content */
