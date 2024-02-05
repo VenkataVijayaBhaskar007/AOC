@@ -16044,8 +16044,8 @@ button:focus, input:focus, textarea:focus {
   }
   .spiral-main {
 	margin: 0px auto;
-	width: 360px;
-	height: 360px;
+	width: 300px;
+	height: 300px;
 	position: relative;
   }
   .spiral-big-circle {
@@ -16113,7 +16113,7 @@ button:focus, input:focus, textarea:focus {
    .spiral-icon-block:nth-child(5) {
 	position: absolute;
 	top: 10%;
-	left: 25%;
+	left: -5%;
 	transform: translate(-50%, -50%);
 	background-color: #ff0000; 
 	color: #ffffff; 
@@ -16122,8 +16122,8 @@ button:focus, input:focus, textarea:focus {
   
   .spiral-icon-block:nth-child(6) {
 	position: absolute;
-	top: 75%;
-	right: -15%;
+	top: 70%;
+	right: -30%;
 	transform: translate(-75%, -75%);
 	background-color: #00ff00; 
 	color: #000000;  
