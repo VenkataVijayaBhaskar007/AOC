@@ -15616,8 +15616,8 @@ button:focus, input:focus, textarea:focus {
   /* Add your own styles as needed */
   .whatsapp-button {
 	position: fixed;
-	width: 40px; /* Adjust width */
-	height: 40px; /* Adjust height */
+	width: 60px; /* Adjust width */
+	height: 60px; /* Adjust height */
 	bottom: 30px;
 	left: 35px;
 	display: inline-flex;
