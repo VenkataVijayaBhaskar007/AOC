@@ -1,6 +1,10 @@
 /*======================
    01. Google fonts
 ========================*/
+
+html, body {width: auto!important; overflow-x: hidden!important}
+
+
 @font-face {
     font-family: bromega-Regular;
     src: url(../webfonts/bromega-Regular.ttf);
